@@ -12,9 +12,9 @@ list.each{ item ->
 }
 
 // Iterate one by one with index
-//list.each{ item  ->
-//    println $i : item
-//}
+list.eachWithIndex { item, i  ->
+    println "index $i : $item"
+}
 
 // Add item into the list
 list = list.plus(6 )
